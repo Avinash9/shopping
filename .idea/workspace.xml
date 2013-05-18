@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="13054186-bdda-48d8-ae9d-88967008b796" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/payment_confirm.html.erb" afterPath="$PROJECT_DIR$/app/views/users/payment_confirm.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shopping.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,7 +66,7 @@
       <file leaf-file-name="payment_confirm.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/users/payment_confirm.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="52" selection-start="3527" selection-end="3527" vertical-scroll-proportion="0.60306406">
+            <state line="73" column="32" selection-start="4072" selection-end="4072" vertical-scroll-proportion="0.68662953">
               <folding />
             </state>
           </provider>
@@ -786,7 +785,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/payment_confirm.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="52" selection-start="3527" selection-end="3527" vertical-scroll-proportion="0.60306406">
+        <state line="73" column="32" selection-start="4072" selection-end="4072" vertical-scroll-proportion="0.68662953">
           <folding />
         </state>
       </provider>
