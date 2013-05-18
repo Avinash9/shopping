@@ -1,11 +1,11 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 
-=begin
+begin
 if User.count == 0
   puts "Creating an Admin/Manager User"
   if User.find_or_create_by_username(:username => 'jigar',
-                                  :hashed_password => 'shah',
+                                  :hashed_password => 'shahshah',
                                   :user_type => 'Manager', #Manager/Customer
                                   :firstname => 'Jigar',
                                   :lastname => 'Shah',
@@ -29,7 +29,7 @@ if User.count == 0
     puts "Failure"
   end
 end
-=end
+end
 
 #Desktop
 Product.create(:name => 'Desktop 1',:description => 'IBM',:quantity => 100,:price => 899,:category => 'Computer',:related_type => 'Office',:old_new => 'New',:image_url => 'desktop_1.jpg')
