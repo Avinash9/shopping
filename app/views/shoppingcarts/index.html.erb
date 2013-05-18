@@ -39,7 +39,7 @@
                                         <%= f.submit "Update", :class => 'Submit_Class' %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         <%= f.submit "Delete", :class => 'Submit_Class' %>
                                     </td>
-                                    <% @total_cost = @total_cost.to_i + sc_item.quantity * sc_item.price %>
+                                    <% @total_cost = @total_cost + sc_item.quantity.to_i * sc_item.price.to_i %>
                                 </tr>
                             <% end %>
                         <% end %>

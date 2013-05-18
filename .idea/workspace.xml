@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="13054186-bdda-48d8-ae9d-88967008b796" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shoppingcarts/index.html.erb" afterPath="$PROJECT_DIR$/app/views/shoppingcarts/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shopping.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,7 +20,7 @@
     <file path="/product.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1366420282869" ignored="false" />
     <file path="/admin_controller.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1367058233735" ignored="false" />
     <file path="$PROJECT_DIR$/../usertweet/app/models/user.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1364285292257" ignored="false" />
-    <file path="/index.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1368876020152" ignored="false" />
+    <file path="/index.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1368876663096" ignored="false" />
     <file path="$PROJECT_DIR$/config/environments/production.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1364287659596" ignored="false" />
     <file path="$PROJECT_DIR$/config/initializers/inflections.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1364287659596" ignored="false" />
     <file path="$PROJECT_DIR$/config/initializers/mime_types.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1364287659596" ignored="false" />
@@ -69,7 +66,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/shoppingcarts/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="61" selection-start="2649" selection-end="2649" vertical-scroll-proportion="0.68384403">
+            <state line="41" column="79" selection-start="2583" selection-end="2583" vertical-scroll-proportion="0.66295266">
               <folding />
             </state>
           </provider>
@@ -107,8 +104,8 @@
         <option value="$PROJECT_DIR$/app/views/aboutus/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/app/views/shoppingcarts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/shoppingcarts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/shoppingcarts/index.html.erb" />
       </list>
     </option>
   </component>
@@ -772,7 +769,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shoppingcarts/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="61" selection-start="2649" selection-end="2649" vertical-scroll-proportion="0.68384403">
+        <state line="41" column="79" selection-start="2583" selection-end="2583" vertical-scroll-proportion="0.66295266">
           <folding />
         </state>
       </provider>
