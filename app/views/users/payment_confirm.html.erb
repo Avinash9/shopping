@@ -52,7 +52,7 @@
                         <td align="right"><%= order_item.product_qty %>&nbsp;&nbsp;</td>
                         <td align="right"><%= order_item.price %>&nbsp;&nbsp;</td>
                         <td align="right"><%= order_item.product_qty * order_item.price %>&nbsp;&nbsp;</td>
-                        <% @total_cost = @total_cost + (order_item.product_qty * order_item.price) %>
+                        <% @total_cost = @total_cost + order_item.product_qty.to_i * order_item.price.to_i %>
                     </tr>
                     <% end %>
                     <tr>
