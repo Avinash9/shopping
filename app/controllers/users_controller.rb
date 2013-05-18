@@ -136,7 +136,7 @@ class UsersController < ApplicationController
     #reset_session[:user]
     session[:user] = nil
     flash[:message] = 'Logged out'
-    redirect_to :action => 'index'
+    redirect_to root_path
   end
   #End of Class
 end
