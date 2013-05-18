@@ -51,13 +51,13 @@
                         <td>&nbsp;&nbsp;<%= order_item.description %></td>
                         <td align="right"><%= order_item.product_qty %>&nbsp;&nbsp;</td>
                         <td align="right"><%= order_item.price %>&nbsp;&nbsp;</td>
-                        <td align="right"><%= order_item.product_qty * order_item.price %>&nbsp;&nbsp;</td>
+                        <td align="right"><%= order_item.product_qty.to_i * order_item.price.to_i %>&nbsp;&nbsp;</td>
                         <% @total_cost = @total_cost + order_item.product_qty.to_i * order_item.price.to_i %>
                     </tr>
                     <% end %>
                     <tr>
                         <td colspan="4" align="right"><span style="color:red"><b>Total Cost :</b></span><br />(includes tax & shipping)</td>
-                        <% @total_tax = (0.0825 * @total_cost) %>
+                        <% @total_tax = (0.0825.to_f * @total_cost) %>
                         <td align="right" style="color:red"><b><%= (@total_cost + @total_tax + @total_shipping).round %></b></td>
                     </tr>
                 </table>
