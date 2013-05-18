@@ -1,4 +1,8 @@
 class UsersController < ApplicationController
+  def facebook
+
+  end
+
   def index
     @user = nil
     @login_user = User.new
