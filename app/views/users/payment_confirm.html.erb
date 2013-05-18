@@ -1,0 +1,88 @@
+<style type="text/css">
+    .Button_Continue_Shopping_Class {height:30px; width:150px}
+</style>
+
+<td width="80%" valign="top">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+        <tr>
+            <td colspan="5" align="center" style="font-size:30px">Purchase Order Bill</td>
+        </tr>
+        <tr>
+            <td colspan="5">&nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                <table border="1" cellpadding="0" cellspacing="0" width="100%" height="100%">
+                    <tr>
+                        <td colspan="4" align=center><b>Invoice No. : <%= @order.id %></b></td>
+                        <td colspan="1" width="30%" align=center><b>Order Date. : <%= @order.created_at.to_date %></b></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <span style="color:blue"><b>Ship Address :</b></span>
+                            <br />&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.s_addr_str_no %>&nbsp;<%= @user.s_addr_str_name%>
+                            <br />&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.s_addr_city %>
+                            <br />&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.s_addr_state %>&nbsp;<%= @user.s_addr_zip %>
+                        </td>
+                        <td colspan="1">
+                            <span style="color:blue"><b>Bill To : </b></span>
+                            <br />&nbsp;&nbsp;&nbsp;&nbsp;<b><%= @user.firstname + ' ' + @user.lastname %></b>
+                            <% if @user.b_addr_str_no == NIL %>
+                                <br />&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.s_addr_str_no %>&nbsp;<%= @user.s_addr_str_name%>
+                                <br />&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.s_addr_city %>
+                                <br />&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.s_addr_state %>&nbsp;<%= @user.s_addr_zip %>
+                            <% elsif %>
+                                <br />&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.b_addr_str_no %>&nbsp;<%= @user.b_addr_str_name%>
+                                <br />&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.b_addr_city %>
+                                <br />&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.b_addr_state %>&nbsp;<%= @user.b_addr_zip %>
+                            <% end %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Unit Price</th>
+                        <th>Qty</th>
+                        <th>Total</th>
+                    </tr>
+                    <% @order_product_details.each do |order_item| %>
+                    <tr>
+                        <td>&nbsp;&nbsp;<%= order_item.name %></td>
+                        <td>&nbsp;&nbsp;<%= order_item.description %></td>
+                        <td align="right"><%= order_item.product_qty %>&nbsp;&nbsp;</td>
+                        <td align="right"><%= order_item.price %>&nbsp;&nbsp;</td>
+                        <td align="right"><%= order_item.product_qty * order_item.price %>&nbsp;&nbsp;</td>
+                        <% @total_cost = @total_cost + (order_item.product_qty * order_item.price) %>
+                    </tr>
+                    <% end %>
+                    <tr>
+                        <td colspan="4" align="right"><span style="color:red"><b>Total Cost :</b></span><br />(includes tax & shipping)</td>
+                        <% @total_tax = (0.0825 * @total_cost) %>
+                        <td align="right" style="color:red"><b><%= (@total_cost + @total_tax + @total_shipping).round %></b></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5" align="center">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="5" align="center" style="font-size:30px; color:red">Thank you for shopping with BlueChip !!!</td>
+        </tr>
+        <tr>
+            <td colspan="5" align="center">&nbsp;</td>
+        </tr>
+        <!--<tr>
+            <td colspan="5" align="center">
+                <%= image_tag("Continue_Shopping.png") %>
+            </td>
+        </tr>-->
+        <tr>
+            <td colspan="5" align="center">
+                <form method="post" action="/products/index">
+                    <input type="Submit" class="Button_Continue_Shopping_Class" value="Continue Shopping">
+                </form>
+            </td>
+        </tr>
+    </table>
+</td>

@@ -1,0 +1,76 @@
+<style type="text/css">
+    .Submit_Class {height:30px; width:100px}
+</style>
+
+<td width="80%" align="center" valign="top">
+        <table border="0" cellpadding="3" cellspacing="3">
+          <%= form_for @product, :url => { :action => :create} do |f| -%>
+            <tr>
+                <td align="center" colspan="3">
+                  <span style="font-size:30px">Welcome <span style="color:red"><b><%= @user.firstname + " " + @user.lastname %></b></span> (Manager)</span>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="3"><h3>Product Administration - Add</h3></td>
+            </tr>
+            <tr>
+                <td colspan="3">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td> : </td>
+                <td><%= f.text_field(:name, :size => 20) %></td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td> : </td>
+                <td><%= f.text_area(:description, :rows => 3) %></td>
+            </tr>
+            <tr>
+                <td>Quantity</td>
+                <td> : </td>
+                <td><%= f.text_field(:quantity, :size => 20) %></td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td> : </td>
+                <td><%= f.text_field(:price, :size => 20) %></td>
+            </tr>
+            <tr>
+                <td>Category</td>
+                <td> : </td>
+                <td><%= f.text_field(:category, :size => 20) %></td>
+            </tr>
+            <tr>
+                <td>Related - Type</td>
+                <td> : </td>
+                <td><%= f.text_field(:related_type, :size => 20) %></td>
+            </tr>
+            <tr>
+                <td>Old/New</td>
+                <td> : </td>
+                <td>
+                    <select id="product_old_new" name="product[old_new]" size="1">
+                        <option value="new">New</option>
+                        <option value="old">Old</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Image name</td>
+                <td> : </td>
+                <td><%= f.text_field(:image_url, :size => 20) %></td>
+            </tr>
+            <tr>
+                <td colspan="3">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="3" height="10%" align="center" valign="top">
+                    <%=	f.submit :value => 'Add Product', :class => 'Submit_Class' %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <%= f.submit :value => 'Clear Fields', :type => 'reset',  :class => 'Submit_Class' %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <%= f.submit :value => 'Cancel', :class => 'Submit_Class'%>
+                </td>
+            </tr>
+        </table>
+    <% end -%>
+</td>

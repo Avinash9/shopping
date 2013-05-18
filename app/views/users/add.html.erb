@@ -1,0 +1,192 @@
+<style type="text/css">
+    .Submit_Class {height:30px; width:100px}
+</style>
+
+<td width="80%" align="center" valign="top">
+    <table border="0" cellpadding="3" cellspacing="3">
+      <%= form_for(@user, :as => :new_user, :url => { :action => :create }) do |f| -%>
+        <tr>
+            <td align="center" colspan="3">
+                <span style="font-size:30px">Welcome <span style="color:red"><b><%= @user.firstname + " " + @user.lastname %></b></span> (Manager)</span>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="3"><h3>User Administration - Add</h3></td>
+        </tr>
+        <tr>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="25%">Username</td>
+            <td width="5%">:</td>
+            <td>
+                <%= f.text_field(:username, :size => 15, :value => NIL) %>
+            </td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>:</td>
+            <td><%= f.password_field(:password, :size => 15) %></td>
+        </tr>
+        <tr>
+            <td>Re-Type Password</td>
+            <td>:</td>
+            <td><%= f.password_field :password_confirmation, :size => 15%></td>
+        <tr>
+        <tr>
+            <td>User Type</td>
+            <td>:</td>
+            <td>
+                <select id="new_user_user_type" name="new_user[user_type]" size="1">
+                    <option value="Manager">Manager</option>
+                    <option value="Customer">Customer</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td>:</td>
+            <td><%= f.text_field(:firstname, :size => 15, :value => NIL) %></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td>:</td>
+            <td><%= f.text_field(:lastname, :size => 15, :value => NIL) %></td>
+        </tr>
+        <tr>
+            <td>E-mail</td>
+            <td>:</td>
+            <td><%= f.text_field(:email, :size => 20, :value => NIL) %></td>
+        </tr>
+        <tr>
+            <td>Sex</td>
+            <td>:</td>
+            <td>
+                <%= f.radio_button :gender, 'Male' %>&nbsp;&nbsp;Male&nbsp;&nbsp;&nbsp;&nbsp;
+                <%= f.radio_button :gender, 'Female' %>&nbsp;&nbsp;Female
+            </td>
+        </tr>
+        <tr>
+            <td>BirthDay</td>
+            <td>:</td>
+            <td>
+                <select id="new_user_bday_day" name="new_user[bday_day]" size="1">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3" >3</option>
+                    <option value="4" >4</option>
+                    <option value="5" >5</option>
+                    <option value="6" >6</option>
+                    <option value="7" >7</option>
+                    <option value="8" >8</option>
+                    <option value="9" >9</option>
+                    <option value="10" >10</option>
+                    <option value="11" >11</option>
+                    <option value="12" >12</option>
+                    <option value="13" >13</option>
+                    <option value="14" >14</option>
+                    <option value="15" >15</option>
+                    <option value="16" >16</option>
+                    <option value="17" >17</option>
+                    <option value="18" >18</option>
+                    <option value="19" >19</option>
+                    <option value="20" >20</option>
+                    <option value="21" >21</option>
+                    <option value="22" >22</option>
+                    <option value="23" >23</option>
+                    <option value="24" >24</option>
+                    <option value="25" >25</option>
+                    <option value="26" >26</option>
+                    <option value="27" >27</option>
+                    <option value="28" >28</option>
+                    <option value="29" >29</option>
+                    <option value="30" >30</option>
+                    <option value="31" >31</option>
+                </select>&nbsp;day&nbsp;
+                <select id="new_user_bday_month" name="new_user[bday_month]" size="1">
+                    <option value="1" selected>Jan</option>
+                    <option value="2" >Feb</option>
+                    <option value="3" >March</option>
+                    <option value="4" >April</option>
+                    <option value="5" >May</option>
+                    <option value="6" >June</option>
+                    <option value="7" >July</option>
+                    <option value="8" >Aug</option>
+                    <option value="9">Sep</option>
+                    <option value="10">Oct</option>
+                    <option value="11">Nov</option>
+                    <option value="12">Dec</option>
+                </select>&nbsp;month&nbsp;
+                <select id="new_user_bday_year" name="new_user[bday_year]" size="1">
+                    <option value="1970" selected>1970</option>
+                    <option value="1971" selected>1971</option>
+                    <option value="1972" selected>1972</option>
+                    <option value="1973" selected>1973</option>
+                    <option value="1974" selected>1974</option>
+                    <option value="1975" selected>1975</option>
+                    <option value="1976" selected>1976</option>
+                    <option value="1977" selected>1977</option>
+                    <option value="1978" selected>1978</option>
+                    <option value="1979" selected>1979</option>
+                    <option value="1980" selected>1980</option>
+                    <option value="1981" selected>1981</option>
+                    <option value="1982" selected>1982</option>
+                    <option value="1983" selected>1983</option>
+                    <option value="1984" selected>1984</option>
+                    <option value="1985" selected>1985</option>
+                    <option value="1986" selected>1986</option>
+                    <option value="1987" selected>1987</option>
+                    <option value="1988" selected>1988</option>
+                    <option value="1989" selected>1989</option>
+                    <option value="1990" selected>1990</option>
+                    <option value="1991" selected>1991</option>
+                    <option value="1992" selected>1992</option>
+                    <option value="1993" selected>1993</option>
+                    <option value="1994" selected>1994</option>
+                </select>&nbsp;year&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3"><b>Shipping & Billing Address</b></td>
+        </tr>
+        <tr>
+            <td>Street No</td>
+            <td>:</td>
+            <td><%= f.text_field(:s_addr_str_no, :size => 15, :value => NIL) %></td>
+        </tr>
+        <tr>
+            <td>Street Name</td>
+            <td>:</td>
+            <td><%= f.text_field(:s_addr_str_name, :size => 15, :value => NIL) %></td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td>:</td>
+            <td><%= f.text_field(:s_addr_city, :size => 15, :value => NIL) %></td>
+        </tr>
+        <tr>
+            <td>State</td>
+            <td>:</td>
+            <td><%= f.text_field(:s_addr_state, :size => 15, :value => NIL) %></td>
+        </tr>
+        <tr>
+            <td>Zip</td>
+            <td>:</td>
+            <td><%= f.text_field(:s_addr_zip, :size => 15, :value => NIL) %></td>
+        </tr>
+        <tr>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3" height="10%" align="center" valign="top">
+                <%=	f.submit :value => 'Register', :class => 'Submit_Class' %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <%= f.submit :value => 'Clear Fields', :type => 'reset',  :class => 'Submit_Class' %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <%= f.submit :value => 'Cancel', :class => 'Submit_Class'%>
+            </td>
+        </tr>
+    <% end -%>
+    </table>
+</td>

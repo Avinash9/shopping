@@ -1,0 +1,96 @@
+<style type="text/css">
+    .Submit_Class {height:30px; width:100px}
+</style>
+
+<td width="80%" align="center" valign="top">
+    <%= form_for(@user, :as => :modified_user, :url => { :controller => :users, :action => :update, :u_m_id => @modify_user }) do |f| -%>
+        <table border="0" cellpadding="3" cellspacing="3">
+            <tr>
+                <td align="center" colspan="3">
+                  <span style="font-size:30px">Welcome <span style="color:red"><b><%= @user.firstname + " " + @user.lastname %></b></span> (Manager)</span>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="3"><h3>User Administration  - Modify/Delete</h3></td>
+            </tr>
+            <tr>
+                <td colspan="3">&nbsp;</td>
+            </tr>
+            <tr>
+                <td width="40%">Username</td>
+                <td width="5%">:</td>
+                <td><%= f.text_field(:username, :size => 15, :value => @modify_user.username, :disabled => true ) %></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td><%= f.password_field(:hashed_password, :size => 15, :value => @modify_user.hashed_password, :disabled => true ) %></td>
+            </tr>
+            <tr>
+                <td>User Type</td>
+                <td>:</td>
+                <td>
+                    <select id="modified_user_user_type" name="modified_user[user_type]" size="1">
+                        <% if @modify_user.user_type == "Manager" %>
+                            <option value="Manager" selected>Manager</option>
+                            <option value="Customer">Customer</option>
+                        <% else %>
+                          <option value="Manager">Manager</option>
+                          <option value="Customer" selected>Customer</option>
+                        <% end %>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td>:</td>
+                <td><%= f.text_field(:firstname, :size => 15, :value => @modify_user.firstname) %></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td>:</td>
+                <td><%= f.text_field(:lastname, :size => 15, :value => @modify_user.lastname) %></td>
+            </tr>
+            <tr>
+                <th colspan="2">Shipping & Billing Address</th>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Street No</td>
+                <td>:</td>
+                <td><%= f.text_field(:s_addr_str_no, :size => 15, :value => @modify_user.s_addr_str_no) %></td>
+            </tr>
+            <tr>
+                <td>Street Name</td>
+                <td>:</td>
+                <td><%= f.text_field(:s_addr_str_name, :size => 15, :value => @modify_user.s_addr_str_name) %></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>:</td>
+                <td><%= f.text_field(:s_addr_city, :size => 15, :value => @modify_user.s_addr_city) %></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td>:</td>
+                <td><%= f.text_field(:s_addr_state, :size => 15, :value => @modify_user.s_addr_state) %></td>
+            </tr>
+            <tr>
+                <td>Zip</td>
+                <td>:</td>
+                <td><%= f.text_field(:s_addr_zip, :size => 15, :value => @modify_user.s_addr_zip) %></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <%=	f.submit :value => 'Modify', :class => 'Submit_Class' %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <%= f.submit :value => 'Cancel', :class => 'Submit_Class'%>
+                </td>
+            </tr>
+        </table>
+    <% end -%>
+</td>

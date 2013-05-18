@@ -1,0 +1,28 @@
+<td width="60%" valign="top">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+        <tr>
+            <td colspan="3" align="center"><span style="color:red; font-family:verdana; font-size:40px">Hot "New" Products</span><hr /></td>
+        </tr>
+        <tr>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+        <!-- DISPLAY NEW PRODUCT HERE-->
+        <% @new_products.in_groups_of(3, false) do |new_products| %>
+        <tr>
+        <% for new_product in new_products %>
+            <td align=center width="33%" style="font-family:verdana; color:#990000">
+                <%= image_tag(new_product.image_url, :alt => new_product.image_url, :size => "100x125" ) %>
+                <br>
+                <%= link_to new_product.name, :controller => "products", :action => "detail", :p_id => new_product.id %>
+            </td>
+        <% end %>
+        </tr>
+        <tr>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+        <% end %>
+    </table>
+</td>

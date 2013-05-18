@@ -1,0 +1,57 @@
+<td width="80%" valign="top" align="center">
+    <table border="0" cellpadding="0" cellspacing="0" width="50%">
+        <tr>
+            <td align="center" colspan="2">
+              <span style="font-size:30px">Welcome <span style="color:red"><b><%= @user.firstname + " " + @user.lastname %></b></span> (Manager)</span>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td align="left" style="font-size:20px; color:red">
+                <ul>Products
+                    <li>
+                        <%= link_to "Add", :controller => "products", :action => "add" %>
+                    </li>
+                    <li>
+                        <%= link_to "Modify", :controller => "products", :action => "modify"%>
+                    </li>
+                </ul>
+            </td>
+            <td align="left" style="font-size:20px; color:red">
+                <ul>Users
+                    <li>
+                        <%= link_to "Add", :controller => "users", :action => "add"%>
+                    </li>
+                    <li>
+                        <%= link_to "Modify", :controller => "users", :action => "modify"%>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">
+                <a href="/HW2/report.php"  style="font-size:20px; color:red">View Report(s)</a>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <a href="/HW2/product_administration.php" style="font-size:20px; color:red">Click here</a>&nbsp;to go back
+            </td>
+        </tr>
+    </table>
+</td>

@@ -1,0 +1,24 @@
+<td width="60%" valign="top">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td colspan="3" align="left" style="font-family:verdana; font-size:30px">Category : <span style="color:red"><%= @product.category %></span><hr /></td>
+        </tr>
+        <tr>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+        <% @products.in_groups_of(3, false) do |products| %>
+        <tr>
+            <% for product in products %>
+            <td align=center width="33%" style="font-family:verdana; color:#990000">
+                <%= image_tag(product.image_url, :alt => product.image_url, :size => "100x125" ) %>
+                <br>
+                <%= link_to product.name, :controller => "products", :action => "detail", :p_id => product.id %>
+            </td>
+            <% end %>
+        </tr>
+        <tr>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+        <% end %>
+    </table>
+</td>

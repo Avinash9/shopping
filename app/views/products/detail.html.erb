@@ -1,0 +1,48 @@
+<style type="text/css">
+    .Submit_Class {height:30px; width:100px}
+    .Button_Continue_Shopping_Class {height:30px; width:150px}
+</style>
+
+<td width="60%" valign="top" style="font-family:verdana">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td colspan="2" align="center"><span style="color:red; font-size:30px;">Product Detail</span><hr /></td>
+        </tr>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+            <td align="center" width="50%">
+                <%= image_tag(@product.image_url, :alt => @product.image_url, :size => "100x125" ) %>
+            </td>
+            <td align="left">
+                <p style="color:#990000">Name : <b><%= @product.name %></b></p>
+                <p style="color:#990000">Description : <b><%= @product.description %></b></p>
+                <p style="color:red">Price : <b>$<%= @product.price %></b></p>
+                <p style="color:blue">Availability: Usually ships within 24 hours</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+        <%= form_for @sc_add, :url => { :controller => :shoppingcarts, :action => :add, :p_id => @product.id }  do |f| -%>
+        <tr>
+            <td>&nbsp;</td>
+            <td align="left" style="color:red">
+                <b>Quantity&nbsp;&nbsp;&nbsp;&nbsp;</b>
+                    <select name="sc_add[quantity]" id="sc_add[quantity]" size="1">
+                        <option value="1" selected>1</option>
+                        <%= (2..20).each do |i| %>
+                            <option value="<%= i %>"><%= i %></option>
+                        <% end %>
+                    </select>
+            </td>
+        </tr>
+        <tr><td colspan="2">&nbsp;</td></tr>
+        <tr>
+            <td align="center"><%= f.submit "Continue Shopping", :class => 'Button_Continue_Shopping_Class' %></td>
+            <td align="center"><%= f.submit "Add to Cart", :class => 'Submit_Class' %></td>
+        </tr>
+        <% end -%>
+    </table>
+</td>

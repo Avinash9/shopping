@@ -1,0 +1,129 @@
+<style type="text/css">
+    .Submit_Class {height:30px; width:100px}
+    .Button_Continue_Shopping_Class {height:30px; width:150px}
+</style>
+<td width="80%" valign="top" align="center">
+    <% if @user %>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+        <tr>
+            <td colspan="2">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr><td colspan="4">&nbsp;</td></tr>
+                    <tr>
+                        <td colspan="4" align="center" style="font-size:30px">
+                          <span style="color:red"><%= @user.firstname + ' ' + @user.lastname %>'s</span> shopping cart
+                        </td>
+                    </tr>
+                    <tr><td colspan="4">&nbsp;</td></tr>
+                    <% if @sc_items.count > 0 %>
+                        <tr bgcolor="#D9D9D9" style="font-size:20px">
+                            <th>Item Name & Description</th>
+                            <th>Unit Price</th>
+                            <th>Quantity</th>
+                            <th>Action</th>
+                        </tr>
+                        <%= form_for @sc, :url => { :controller => :shoppingcarts, :action => :update}  do |f| -%>
+                            <% @sc_items.each do |sc_item| %>
+                                <tr>
+                                    <td align="left" valign="middle">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <%= image_tag(sc_item.image_url, :alt => sc_item.name, :size => "50x50", :border => 0 ) %>&nbsp;&nbsp;
+                                        <b><%= sc_item.name %></b> (<%= sc_item.description %>)
+                                    </td>
+                                    <td align="center">$<%= sc_item.price %></td>
+                                    <td align="center">
+                                        <%= f.text_field(:quantity, :size => 2, :value => sc_item.quantity) %>
+                                        <%= f.hidden_field(:id, :value => sc_item.id) %>
+                                    </td>
+                                    <td align="center">
+                                        <%= f.submit "Update", :class => 'Submit_Class' %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <%= f.submit "Delete", :class => 'Submit_Class' %>
+                                    </td>
+                                    <% @total_cost = @total_cost + sc_item.quantity * sc_item.price %>
+                                </tr>
+                            <% end %>
+                        <% end -%>
+                        <tr><td colspan="4">&nbsp;</td></tr>
+                        <tr>
+                            <td colspan="3" align="right"><b>Sub-total :</b></td>
+                            <td align="right">$ <%= @total_cost.round %>&nbsp;&nbsp;&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" align="right"><span style="color:red">Flat Shipping Rate :</span></td>
+                            <td align="right"><span style="color:red">$ <%= @total_shipping.round %>&nbsp;&nbsp;&nbsp;</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" align="right">Tax :</td>
+                            <td align="right">$ <%= (@total_tax = (0.0825 * @total_cost)).round %>&nbsp;&nbsp;&nbsp;</td>
+                        </tr>
+                        <tr bgcolor="#D9D9D9">
+                            <td colspan="3" align="right"><span style="color:red; font-size:25px"><b>Final Total :</b></span></td>
+                            <td align="right">
+                                <span style="color:red; font-size:25px"><b>$ <%= (@total_cost + @total_tax + @total_shipping).round %></b>&nbsp;&nbsp;</span>
+                            </td>
+                        </tr>
+                    <% else %>
+                    <tr>
+                        <td colspan="4" style="text-align:center; font-family:verdana; color:#990000"><b>Your Basket is Empty</b></td>
+                    </tr>
+                    <% end %>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+            <%= form_for @sc, :url => { :controller => :shoppingcarts, :action => :checkout}  do |f| -%>
+                <td align="center">
+                    <%= f.hidden_field(:final_cost, :value => @total_cost + @total_tax + @total_shipping) %>
+                    <%= f.submit "Continue Shopping", :class => 'Button_Continue_Shopping_Class' %>
+                </td>
+                <% if @sc_items.count > 0 %>
+                <td>
+                    <%= f.submit "Checkout", :class => 'Submit_Class' %>
+                </td>
+                <% end %>
+            <% end -%>
+        </tr>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+        <!--
+        <tr>
+            <td colspan="2">
+                <table border="1" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td colspan="2" style="font-size:25px;color:blue">Customers who bought the items in your shopping cart also bought:</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                    <%# @sc_related_products.in_groups_of(3, false) do |related_products| %>
+                    <tr>
+                        <%# for related_products in related_product %>
+                        <td align=center width="33%">
+                            <%#= image_tag(related_product.image_url, :alt => related_product.name, :size => "100x125" ) %>
+                            <br>
+                            <%#= link_to related_product.name, :controller => "products", :action => "detail", :u_id => current_user.id, :p_id => related_product.id %>
+                        </td>
+                        <%# end %>
+                    </tr>
+                    <%# end %>
+                </table>
+            <td>
+        </tr>
+        -->
+    </table>
+    <% else %>
+      <br>
+      <br>
+      <span style="color:red; font-size:30px">Please <a href="/register">Register</a> to continue shopping</span>
+    <% end %>
+</td>
