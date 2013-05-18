@@ -39,10 +39,10 @@
                                         <%= f.submit "Update", :class => 'Submit_Class' %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         <%= f.submit "Delete", :class => 'Submit_Class' %>
                                     </td>
-                                    <% @total_cost = @total_cost + sc_item.quantity * sc_item.price %>
+                                    <% @total_cost = @total_cost.to_i + sc_item.quantity * sc_item.price %>
                                 </tr>
                             <% end %>
-                        <% end -%>
+                        <% end %>
                         <tr><td colspan="4">&nbsp;</td></tr>
                         <tr>
                             <td colspan="3" align="right"><b>Sub-total :</b></td>
