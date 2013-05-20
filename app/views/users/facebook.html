@@ -35,6 +35,7 @@
     </div>
 </td>
   -->
+   <!--
 <td width="60%" valign="top">
 <div id="fb-root"></div>
 <script>
@@ -98,5 +99,28 @@
 </script>
 <!--Below we include the Login Button social plugin. This button uses the JavaScript SDK to-->
 <!--present a graphical Login button that triggers the FB.login() function when clicked.-->
-<fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
+<!--<fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
+</td>
+-->
+        <script>
+            function myfunc() {
+                FB.login(function(response) {
+                    if (response.session) {
+                        if (response.perms) {
+                            // user is logged in and granted some permissions.
+                            // perms is a comma separated list of granted permissions
+                        } else {
+                            // user is logged in, but did not grant any permissions
+                        }
+                    } else {
+                        // user is not logged in
+                    }
+                }, {perms:'offline_access,read_stream'});
+            }
+        </script>
+<td width="60%" valign="top">
+    <table border="0" width="100%">
+        <tr align="center"><td>&nbsp;</td></tr>
+        <tr align="center"><td><a href="https://www.facebook.com/dialog/oauth?client_id={338774666212397}&redirect_uri={http://jigar-shopping.herokuapp.com/users/facebook_login.html}"><img src="/assets/facebook_button.png"/></a></td></tr>
+    </table>
 </td>
