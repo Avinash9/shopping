@@ -2,6 +2,12 @@
   <table border="0" width="100%">
     <tr align="center"><td>&nbsp;</td></tr>
     <tr align="center"><td>Facebook - Success</td></tr>
-    <tr align="center"><td><%= @graph_data.html_safe? %></td></tr>
+    Looping through your statuses:<br />
+    <ul>
+        <% @graph_data.each do |status| %>
+          <%= status["message"] %> (<i><%= status["updated_time"]%></i>)<hr>
+        <% end %>
+    </ul>
+
   </table>
 </td>
