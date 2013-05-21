@@ -4,6 +4,7 @@ class UsersController < ApplicationController
 
   def facebook_login
     @fb_code = params[:code]
+    @fb_state = params[:state]
   end
 
   def facebook_error
