@@ -11,6 +11,10 @@ class UsersController < ApplicationController
   end
 
   def facebook_success
+    @api = Koala::Facebook::API.new(session[:access_token])
+    @graph_data = @api.get_object("/me/statuses", "fields"=>"message")
+    respond_to do |format|
+    format.html {   }
   end
 
   def facebook_error
