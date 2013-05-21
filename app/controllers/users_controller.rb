@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
   def facebook
-    session[:oauth] = Koala::Facebook::OAuth.new(APP_ID, SECRET_KEY, SITE_URL + '/users/facebook_login')
+    session[:oauth] = Koala::Facebook::OAuth.new('338774666212397', '24b36c29367634e0149b45cc7061a0fe', 'http://jigar-shopping.herokuapp.com/users/facebook_login')
     @auth_url =  session[:oauth].url_for_oauth_code(:permissions=>"read_stream")
   end
 
