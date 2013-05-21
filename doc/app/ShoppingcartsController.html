@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class ShoppingcartsController - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/controllers/shoppingcarts_controller.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="ApplicationController.html">ApplicationController</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-add">#add</a>
+    
+    <li><a href="#method-i-checkout">#checkout</a>
+    
+    <li><a href="#method-i-index">#index</a>
+    
+    <li><a href="#method-i-update">#update</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./AboutusController.html">AboutusController</a>
+  
+    <li><a href="./AboutusHelper.html">AboutusHelper</a>
+  
+    <li><a href="./AdminController.html">AdminController</a>
+  
+    <li><a href="./AdminHelper.html">AdminHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./ContactusController.html">ContactusController</a>
+  
+    <li><a href="./ContactusHelper.html">ContactusHelper</a>
+  
+    <li><a href="./Order.html">Order</a>
+  
+    <li><a href="./OrderItem.html">OrderItem</a>
+  
+    <li><a href="./OrderitemsController.html">OrderitemsController</a>
+  
+    <li><a href="./OrderitemsHelper.html">OrderitemsHelper</a>
+  
+    <li><a href="./Product.html">Product</a>
+  
+    <li><a href="./ProductsController.html">ProductsController</a>
+  
+    <li><a href="./ProductsHelper.html">ProductsHelper</a>
+  
+    <li><a href="./RegisterController.html">RegisterController</a>
+  
+    <li><a href="./RegisterHelper.html">RegisterHelper</a>
+  
+    <li><a href="./SearchController.html">SearchController</a>
+  
+    <li><a href="./SearchHelper.html">SearchHelper</a>
+  
+    <li><a href="./Shoppingcart.html">Shoppingcart</a>
+  
+    <li><a href="./ShoppingcartsController.html">ShoppingcartsController</a>
+  
+    <li><a href="./ShoppingcartsHelper.html">ShoppingcartsHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class ShoppingcartsController</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-add" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">add</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>How to handle SC for Guest users –&gt; do you make them register/login or
+allow them to add stuff and during checkout make them register</p>
+          
+
+          
+          <div class="method-source-code" id="add-source">
+            <pre><span class="ruby-comment"># File app/controllers/shoppingcarts_controller.rb, line 51</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">add</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@user</span> = <span class="ruby-identifier">session</span>[<span class="ruby-value">:user</span>]
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:commit</span>] <span class="ruby-operator">==</span> <span class="ruby-string">&quot;Add to Cart&quot;</span>
+      <span class="ruby-ivar">@sc_add</span> = <span class="ruby-constant">Shoppingcart</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:sc_add</span>])
+
+      <span class="ruby-comment">#Update the Qty</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-ivar">@sc_item</span> = <span class="ruby-constant">Shoppingcart</span>.<span class="ruby-identifier">where</span>(<span class="ruby-value">:user_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@user</span>.<span class="ruby-identifier">id</span>, <span class="ruby-value">:product_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:p_id</span>]).<span class="ruby-identifier">first</span>
+        <span class="ruby-ivar">@sc_item</span>.<span class="ruby-identifier">quantity</span> = <span class="ruby-ivar">@sc_item</span>.<span class="ruby-identifier">quantity</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@sc_add</span>.<span class="ruby-identifier">quantity</span>
+      <span class="ruby-comment">#Add a new Item to SC</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-ivar">@sc_item</span> = <span class="ruby-constant">Shoppingcart</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:user_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@user</span>.<span class="ruby-identifier">id</span>, <span class="ruby-value">:product_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:p_id</span>], <span class="ruby-value">:quantity</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@sc_add</span>.<span class="ruby-identifier">quantity</span>)
+        <span class="ruby-comment">#@sc_item = Product.find(params[:p_id]).shoppingcarts.create(:user_id =&gt; @user.id,:quantity =&gt; @sc_add.quantity)</span>
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-comment">#Save it to the DB</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-ivar">@sc_item</span>.<span class="ruby-identifier">save!</span>
+        <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:controller</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;shoppingcarts&quot;</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;index&quot;</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:controller</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;products&quot;</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;detail&quot;</span>, <span class="ruby-value">:p_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:p_id</span>]
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:commit</span>] <span class="ruby-operator">==</span> <span class="ruby-string">&quot;Continue Shopping&quot;</span>
+      <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:controller</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;products&quot;</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;index&quot;</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-comment">#Re-direct to Registration page and once registered successfully, bring them back to their cart with the item already added in it.</span>
+    <span class="ruby-comment"># Control it with the Methods defined in Model for Shopping_Cart</span>
+    <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:controller</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'register'</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'index'</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- add-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- add-method -->
+
+    
+      <div id="method-i-checkout" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">checkout</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="checkout-source">
+            <pre><span class="ruby-comment"># File app/controllers/shoppingcarts_controller.rb, line 26</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">checkout</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:commit</span>] <span class="ruby-operator">==</span> <span class="ruby-string">&quot;Checkout&quot;</span>
+    <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:controller</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;users&quot;</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;checkout&quot;</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:commit</span>] <span class="ruby-operator">==</span> <span class="ruby-string">&quot;Continue Shopping&quot;</span>
+    <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:controller</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;products&quot;</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;index&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- checkout-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- checkout-method -->
+
+    
+      <div id="method-i-index" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">index</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="index-source">
+            <pre><span class="ruby-comment"># File app/controllers/shoppingcarts_controller.rb, line 2</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">index</span>
+  <span class="ruby-ivar">@sc_dont_show</span> = <span class="ruby-keyword">true</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@user</span> = <span class="ruby-identifier">session</span>[<span class="ruby-value">:user</span>]
+    <span class="ruby-ivar">@sc_items</span> = <span class="ruby-constant">Shoppingcart</span>.<span class="ruby-identifier">retrieve_cart</span>(<span class="ruby-ivar">@user</span>.<span class="ruby-identifier">id</span>)
+    <span class="ruby-comment">#Shoppingcart.find_by_sql(&quot;SELECT p.name, p.description, p.price, p.image_url, sc.id, sc.quantity</span>
+    <span class="ruby-comment">#                                      FROM products p, shoppingcarts sc</span>
+    <span class="ruby-comment">#                                      WHERE p.id = sc.product_id AND sc.user_id = &quot; + @user.id)</span>
+    <span class="ruby-ivar">@sc_categories</span> = <span class="ruby-constant">Shoppingcart</span>.<span class="ruby-identifier">find_by_sql</span>(<span class="ruby-string">&quot;SELECT distinct(p.category)
+                                                FROM shoppingcarts sc, products p
+                                                WHERE p.id = sc.product_id AND sc.user_id = &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@user</span>.<span class="ruby-identifier">id</span>.<span class="ruby-identifier">to_s</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@sc_items</span> = <span class="ruby-constant">NIL</span>
+    <span class="ruby-ivar">@sc_categories</span> = <span class="ruby-constant">NIL</span>
+    <span class="ruby-keyword">end</span>
+
+  <span class="ruby-ivar">@sc</span> = <span class="ruby-constant">Shoppingcart</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-ivar">@total_cost</span> = <span class="ruby-value">0</span>
+  <span class="ruby-ivar">@total_shipping</span> = <span class="ruby-value">6</span>
+  <span class="ruby-ivar">@total_tax</span> = <span class="ruby-value">0</span>
+
+  <span class="ruby-comment">#@sc_related_products = Shoppingcart.find_by_sql(&quot;SELECT * FROM products WHERE category IN@sc_categories + &quot;)&quot;)</span>
+  <span class="ruby-comment">#@sc_related_products = Product.find_by_sql(&quot;SELECT * from products WHERE related_type = 'Office'&quot;)</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- index-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- index-method -->
+
+    
+      <div id="method-i-update" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="update-source">
+            <pre><span class="ruby-comment"># File app/controllers/shoppingcarts_controller.rb, line 34</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">update</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:commit</span>] <span class="ruby-operator">==</span> <span class="ruby-string">&quot;Update&quot;</span>
+    <span class="ruby-ivar">@sc_update</span> = <span class="ruby-constant">Shoppingcart</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:shoppingcart</span>][<span class="ruby-value">:id</span>])
+    <span class="ruby-ivar">@sc_update</span>.<span class="ruby-identifier">quantity</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:shoppingcart</span>][<span class="ruby-value">:quantity</span>]
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@sc_update</span>.<span class="ruby-identifier">save!</span>
+      <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:controller</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;shoppingcarts&quot;</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;index&quot;</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:controller</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;shoppingcarts&quot;</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;index&quot;</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:commit</span>] <span class="ruby-operator">==</span> <span class="ruby-string">&quot;Delete&quot;</span>
+    <span class="ruby-ivar">@sc_delete</span> = <span class="ruby-constant">Shoppingcart</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:shoppingcart</span>][<span class="ruby-value">:id</span>])
+    <span class="ruby-ivar">@sc_delete</span>.<span class="ruby-identifier">delete</span>
+    <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:controller</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;shoppingcarts&quot;</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;index&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- update-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- update-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

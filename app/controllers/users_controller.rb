@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def facebook
+
   end
 
   def facebook_login

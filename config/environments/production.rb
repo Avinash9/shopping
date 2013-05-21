@@ -64,4 +64,6 @@ Shopping::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+  ENV['FB_APP_ID'] = '338774666212397'
+  ENV['FB_SECRET_KEY'] = '24b36c29367634e0149b45cc7061a0fe'
 end
