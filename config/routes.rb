@@ -23,6 +23,8 @@ Shopping::Application.routes.draw do
   match 'users/checkout_confirm' => 'users#checkout_confirm'
   match 'users/payment_confirm' => 'users#payment_confirm'
   match 'users/facebook' => 'users#facebook'
+  match 'users/facebook_login' => 'users#facebook_login'
+  match 'users/facebook_error' => 'users#facebook_error'
 
   #Products
   match 'products' => 'products#index'

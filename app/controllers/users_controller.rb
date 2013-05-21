@@ -3,6 +3,14 @@ class UsersController < ApplicationController
 
   end
 
+  def facebook_login
+
+  end
+
+  def facebook_error
+
+  end
+
   def index
     @user = nil
     @login_user = User.new
