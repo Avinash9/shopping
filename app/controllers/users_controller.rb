@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+
   def facebook
 
   end
@@ -15,6 +16,7 @@ class UsersController < ApplicationController
     @graph_data = @api.get_object("/me/statuses", "fields"=>"message")
     respond_to do |format|
     format.html {   }
+    end
   end
 
   def facebook_error
