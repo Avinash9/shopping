@@ -16,13 +16,10 @@
     <tr align="center"><td>&nbsp;</td></tr>
     <tr align="center">
         <td>
-          <%= link_to 'Authenticate this Facebook app', @auth_url, :class=>"button"%>
+          <%= link_to 'Authenticate this Facebook app', @auth_url, :class=>"button" %>
           <%# link_to 'Login', Koala::Facebook::OAuth.new.url_for_oauth_code(:callback => 'http://jigar-shopping.herokuapp.com/users/facebook_login', :permissions=>"read_stream") %>
           <!--<a href="https://www.facebook.com/dialog/oauth?client_id=338774666212397&redirect_uri=http://jigar-shopping.herokuapp.com/users/facebook_login"><img src="/assets/facebook_button.png"/></a>-->
         </td>
-    </tr>
-    <tr>
-        <td></td>
     </tr>
   </table>
 </td>
