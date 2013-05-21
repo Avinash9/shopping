@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13054186-bdda-48d8-ae9d-88967008b796" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/facebook.html" afterPath="$PROJECT_DIR$/app/views/users/facebook.html" />
     </list>
     <ignored path="shopping.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,10 +66,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="facebook.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="facebook.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/users/facebook.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="5" selection-start="5340" selection-end="5711" vertical-scroll-proportion="-27.125">
+            <state line="123" column="176" selection-start="5630" selection-end="5630" vertical-scroll-proportion="0.9164345">
               <folding />
             </state>
           </provider>
@@ -94,10 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="50" selection-start="90" selection-end="90" vertical-scroll-proportion="0.119205296">
+            <state line="6" column="50" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,11 +131,11 @@
         <option value="$PROJECT_DIR$/app/views/shoppingcarts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/payment_confirm.html.erb" />
         <option value="$PROJECT_DIR$/app/views/search/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/facebook.html" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/facebook_error.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/facebook_login.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/facebook.html" />
       </list>
     </option>
   </component>
@@ -740,13 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/facebook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="5" selection-start="5340" selection-end="5711" vertical-scroll-proportion="-27.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/facebook_login.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="48" selection-start="156" selection-end="156" vertical-scroll-proportion="-1.875">
@@ -763,7 +755,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="50" selection-start="90" selection-end="90" vertical-scroll-proportion="0.119205296">
+        <state line="6" column="50" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/facebook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="176" selection-start="5630" selection-end="5630" vertical-scroll-proportion="0.9164345">
           <folding />
         </state>
       </provider>
