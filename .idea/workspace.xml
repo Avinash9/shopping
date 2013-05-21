@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13054186-bdda-48d8-ae9d-88967008b796" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/facebook_success.html.erb" afterPath="$PROJECT_DIR$/app/views/users/facebook_success.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
     </list>
     <ignored path="shopping.iws" />
@@ -50,7 +51,7 @@
     <file path="/facebook.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369130285022" ignored="false" />
     <file path="/Gemfile" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369129385606" ignored="false" />
     <file path="/development.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369129929173" ignored="false" />
-    <file path="/facebook_success.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369130689916" ignored="false" />
+    <file path="/facebook_success.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369131899864" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,10 +86,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="2" selection-start="548" selection-end="548" vertical-scroll-proportion="0.38409704">
+            <state line="15" column="70" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="facebook_success.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/users/facebook_success.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="66" selection-start="230" selection-end="230" vertical-scroll-proportion="0.08207934">
               <folding />
             </state>
           </provider>
@@ -123,11 +133,11 @@
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/views/users/facebook.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/facebook_success.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/facebook_error.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/users/facebook_login.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/facebook_success.html.erb" />
       </list>
     </option>
   </component>
@@ -716,13 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/facebook_success.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="93" selection-start="180" selection-end="180" vertical-scroll-proportion="0.10259918">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="59" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.53642386">
@@ -760,7 +763,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="2" selection-start="548" selection-end="548" vertical-scroll-proportion="0.38409704">
+        <state line="15" column="70" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/facebook_success.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="66" selection-start="230" selection-end="230" vertical-scroll-proportion="0.08207934">
           <folding />
         </state>
       </provider>
