@@ -4,14 +4,13 @@ class UsersController < ApplicationController
   end
 
   def facebook_login
-    session[:access_token] = Koala::Facebook::OAuth.new('http://jigar-shopping.herokuapp.com/users/facebook_login').get_access_token(params[:code]) if params[:code]
+    if params[:code]
+      session[:access_token] = params[:code]
+    end
     redirect_to session[:access_token] ? 'http://jigar-shopping.herokuapp.com/users/facebook_success' : 'http://jigar-shopping.herokuapp.com/users/facebook_error'
   end
 
-  end
-
   def facebook_success
-
   end
 
   def facebook_error

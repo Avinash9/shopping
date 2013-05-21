@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13054186-bdda-48d8-ae9d-88967008b796" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/facebook_error.html.erb" afterPath="$PROJECT_DIR$/app/views/users/facebook_error.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/facebook_login.html.erb" afterPath="$PROJECT_DIR$/app/views/users/facebook_login.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
     </list>
     <ignored path="shopping.iws" />
@@ -70,10 +67,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="facebook_login.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="facebook_login.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/facebook_login.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="51" selection-start="115" selection-end="115" vertical-scroll-proportion="0.04103967">
+            <state line="2" column="51" selection-start="115" selection-end="115" vertical-scroll-proportion="-1.25">
               <folding />
             </state>
           </provider>
@@ -88,10 +85,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
+            <state line="9" column="7" selection-start="171" selection-end="171" vertical-scroll-proportion="0.1819407">
               <folding />
             </state>
           </provider>
@@ -126,11 +123,11 @@
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/views/users/facebook.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/facebook_success.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/facebook_error.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/users/facebook_login.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       </list>
     </option>
   </component>
@@ -733,13 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/facebook.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="100" selection-start="527" selection-end="527" vertical-scroll-proportion="-5.0">
@@ -763,7 +753,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/facebook_login.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="51" selection-start="115" selection-end="115" vertical-scroll-proportion="0.04103967">
+        <state line="2" column="51" selection-start="115" selection-end="115" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="7" selection-start="171" selection-end="171" vertical-scroll-proportion="0.1819407">
           <folding />
         </state>
       </provider>
