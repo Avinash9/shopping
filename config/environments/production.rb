@@ -66,4 +66,5 @@ Shopping::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
   ENV['FB_APP_ID'] = '338774666212397'
   ENV['FB_SECRET_KEY'] = '24b36c29367634e0149b45cc7061a0fe'
+  ENV['SITE_URL'] = 'http://jigar-shopping.herokuapp.com'
 end
