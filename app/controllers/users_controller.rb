@@ -3,17 +3,15 @@ class UsersController < ApplicationController
   before_filter :filter_setup_rest_graph
 
   def me
-    render :text => rest_graph.get('me', :metadata => 1).inspect
+    render :text => rest_graph.get('me')
   end
 
-
-
   def feed
-    render :text => rest_graph.get('me/home').inspect
+    render :json => rest_graph.get('me/home')['data'].first
   end
 
   def wall
-    render :text => rest_graph.get('me/feed').inspect
+    render :json => rest_graph.get('me/feed').inspect
   end
 
   def facebook
