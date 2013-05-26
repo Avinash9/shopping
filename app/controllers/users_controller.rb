@@ -2,40 +2,42 @@ class UsersController < ApplicationController
   include RestGraph::RailsUtil
   before_filter :filter_setup_rest_graph
 
-  def me
-    #@me = rest_graph.get('me')
-    render :text => rest_graph.get('me')
-  end
-
-  def feed
-    render :json => rest_graph.get('me/home')['data'].first
-  end
-
-  def wall
-    render :json => rest_graph.get('me/feed').inspect
-  end
-
   def facebook
-    #session[:oauth] = Koala::Facebook::OAuth.new('338774666212397', '24b36c29367634e0149b45cc7061a0fe', 'http://jigar-shopping.herokuapp.com/users/facebook_login')
-    #@auth_url =  session[:oauth].url_for_oauth_code(:permissions=>"read_stream")
+
   end
 
+=begin
   def facebook_login
-    if session[:access_token] = session[:oauth].get_access_token(params[:code])
-      redirect_to 'http://jigar-shopping.herokuapp.com/users/facebook_success'
+    if session[:access_token] = params[:code]
+      redirect_to :controller => 'users', :action => 'facebook_success'
     else
-      redirect_to 'http://jigar-shopping.herokuapp.com/users/facebook_error'
+      redirect_to :controller => 'users', :action => 'facebook_error'
     end
   end
+=end
 
   def facebook_success
-    @api = Koala::Facebook::API.new(session[:access_token])
-    @graph_data = @api.get_object("/me/statuses", "fields"=>"message")
+    #render :json => rest_graph.get('me').inspect
+    @me = ActiveSupport::JSON.decode(rest_graph.get('me').to_json)
+    #render :json => rest_graph.get('me/friends').inspect
+    @me_data = ActiveSupport::JSON.decode(rest_graph.get('me/friends').to_json)
+    session[:access_token] = params[:code]
+    #@api = Koala::Facebook::API.new(session[:access_token])
+    #@graph_data = @api.get_object("/me/statuses", "fields"=>"message")
   end
 
   def facebook_error
 
   end
+
+  def feed
+    #render :json => rest_graph.get('me/home')['data'].first
+  end
+
+  def wall
+    #render :json => rest_graph.get('me/feed').inspect
+  end
+
 
   def index
     @user = nil
@@ -177,12 +179,17 @@ class UsersController < ApplicationController
     redirect_to root_path
   end
 
-
   private
   def filter_setup_rest_graph
     scope = []
-    scope << 'read_stream'
+    # Default User Info + below mentioned permissions will be requested
     scope << 'email'
+    scope << 'user_birthday'
+    scope << 'friends_birthday'
+    scope << 'user_location'
+    scope << 'friends_location'
+    scope << 'friends_photos'
+    scope << 'read_stream' #re-arrange this later on
     rest_graph_setup(:auto_authorize => true, :auto_authorize_scope => scope.join(','))
   end
   #End of Class

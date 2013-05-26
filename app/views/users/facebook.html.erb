@@ -13,13 +13,10 @@
 
 <td width="60%" valign="top">
   <table border="0" width="100%">
-    <tr align="center"><td>&nbsp;</td></tr>
+    <tr align="center" style="height: 100px"><td>&nbsp;</td></tr>
     <tr align="center">
-        <td>
-
-          <%# link_to 'Authenticate this Facebook app', @auth_url, :class=>"button" %>
-          <%# link_to 'Login', Koala::Facebook::OAuth.new.url_for_oauth_code(:callback => 'http://jigar-shopping.herokuapp.com/users/facebook_login', :permissions=>"read_stream") %>
-          <!--<a href="https://www.facebook.com/dialog/oauth?client_id=338774666212397&redirect_uri=http://jigar-shopping.herokuapp.com/users/facebook_login"><img src="/assets/facebook_button.png"/></a>-->
+        <td align="center">
+          <%= link_to image_tag("/assets/facebook_button.png", :alt => 'Facebook Login', :height => '50'), {:controller => "users", :action => "facebook_success"} %>
         </td>
     </tr>
   </table>

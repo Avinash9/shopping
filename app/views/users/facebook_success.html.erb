@@ -1,13 +1,46 @@
 <td width="60%" valign="top">
-  <table border="0" width="100%">
-    <tr align="center"><td>&nbsp;</td></tr>
-    <tr align="center"><td>Facebook - Success</td></tr>
-    Looping through your statuses:<br />
-    <ul>
-        <% @graph_data.each do |status| %>
-          <%= status["message"] %> (<i><%= status["updated_time"]%></i>)<hr>
+    <table border="0" width="100%">
+        <tr>
+          <td align="center"><b>Output from "graph.facebook.com/me"</b></td>
+        </tr>
+        <tr><td>FB ID = <%= @me['id'] %></td></tr>
+        <tr><td>Gender = <%= @me['gender'] %></td></tr>
+        <tr><td>Name = <%= @me['name'] %></td></tr>
+        <tr><td>Birthday = <%= @me['birthday'] %></td></tr>
+        <tr><td>FB Username = <%= @me['username'] %></td></tr>
+        <tr><td>Email = <%= @me['email'] %></td></tr>
+        <tr><td>Location = <%= @me['location']['name'] %></td></tr>
+    </table>
+    <table>
+        <tr>
+          <td colspan="3" align="center"><b>Friends Data  - Output from "graph.facebook.com/me/friends"</b></td>
+        </tr>
+        <tr>
+          <td colspan="3"><%# @me_data.inspect %></td>
+        </tr>
+        <tr>
+            <th>Profile Picture</th>
+            <th>Name</th>
+            <th>Birthday</th>
+        </tr>
+        <% @me_data["data"].each do |d| %>
+        <tr>
+            <td align="center">
+                <% fbapi_prefix = 'http://graph.facebook.com/' %>
+                <% user_id = d['id'].to_s %>
+                <% fbapi_postfix_pictures = '/picture?type=square' %>
+                <img src=<%= fbapi_prefix + user_id + fbapi_postfix_pictures %> />
+            </td>
+            <td align="center">
+                <%= d['name'] %>
+            </td>
+            <td align="center">
+                <% fbapi_prefix = 'https://graph.facebook.com/me/friends?access_token=' %>
+                <% access_token = session[:access_token] %>
+                <% fbapi_postfix_birthday = '&fields=id,name,birthday' %>
+                <img src=<%= fbapi_prefix + access_token + fbapi_postfix_birthday %> />
+            </td>
+        </tr>
         <% end %>
-    </ul>
-
-  </table>
+    </table>
 </td>
