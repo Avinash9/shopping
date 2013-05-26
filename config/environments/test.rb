@@ -35,8 +35,8 @@ Shopping::Application.configure do
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
 
-  ENV['APP_ID'] = '338774666212397'
-  ENV['SECRET_KEY'] = '24b36c29367634e0149b45cc7061a0fe'
-  ENV['SITE_URL'] = 'http://jigar-shopping.herokuapp.com'
+  #ENV['APP_ID'] = '338774666212397'
+  #ENV['SECRET_KEY'] = '24b36c29367634e0149b45cc7061a0fe'
+  #ENV['SITE_URL'] = 'http://jigar-shopping.herokuapp.com'
 
 end

@@ -35,8 +35,7 @@ Shopping::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 
-  #ENV['APP_ID'] = '338774666212397'
-  #ENV['SECRET_KEY'] = '24b36c29367634e0149b45cc7061a0fe'
-  #ENV['SITE_URL'] = 'http://jigar-shopping.herokuapp.com'
+  ENV['FACEBOOK_APP_ID'] = '139465562909485'
+  ENV['FACEBOOK_SECRET'] = 'ec3aed00a6c8d6ccfc809d8e5307f4f0'
 
 end
