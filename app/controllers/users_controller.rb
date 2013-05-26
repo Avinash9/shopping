@@ -1,8 +1,20 @@
 class UsersController < ApplicationController
 
+  include RestGraph::RailsUtil
+  before_filter :filter_setup_rest_graph
+
+  private
+  def filter_setup_rest_graph
+    rest_graph_setup(:auto_authorize => true)
+  end
+
+  def me
+    render :text => rest_graph.get('me').inspect
+  end
+
   def facebook
-    session[:oauth] = Koala::Facebook::OAuth.new('338774666212397', '24b36c29367634e0149b45cc7061a0fe', 'http://jigar-shopping.herokuapp.com/users/facebook_login')
-    @auth_url =  session[:oauth].url_for_oauth_code(:permissions=>"read_stream")
+    #session[:oauth] = Koala::Facebook::OAuth.new('338774666212397', '24b36c29367634e0149b45cc7061a0fe', 'http://jigar-shopping.herokuapp.com/users/facebook_login')
+    #@auth_url =  session[:oauth].url_for_oauth_code(:permissions=>"read_stream")
   end
 
   def facebook_login

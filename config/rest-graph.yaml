@@ -1,0 +1,9 @@
+development:
+    app_id: '338774666212397'
+    secret: '24b36c29367634e0149b45cc7061a0fe'
+    callback_host: 'jigar-shopping.herokuapp.com'
+
+production:
+    app_id: '338774666212397'
+    secret: '24b36c29367634e0149b45cc7061a0fe'
+    callback_host: 'jigar-shopping.herokuapp.com'

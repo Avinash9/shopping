@@ -26,6 +26,7 @@ Shopping::Application.routes.draw do
   match 'users/facebook_login' => 'users#facebook_login'
   match 'users/facebook_success' => 'users#facebook_success'
   match 'users/facebook_error' => 'users#facebook_error'
+  match 'users/me' => 'users#me'
 
   #Products
   match 'products' => 'products#index'

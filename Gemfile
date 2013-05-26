@@ -12,7 +12,12 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+# For Facebook Integration
+gem 'rest-graph'
+# these gems are used in rest-graph
+gem 'rest-client', '>=1.6'
 gem 'json'
+
 gem 'koala'
 
 # Gems used only for assets and not required
