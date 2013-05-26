@@ -3,8 +3,8 @@ class UsersController < ApplicationController
   before_filter :filter_setup_rest_graph
 
   def me
-    @me = rest_graph.get('me')
-    #render :text => rest_graph.get('me')
+    #@me = rest_graph.get('me')
+    render :text => rest_graph.get('me')
   end
 
   def feed

@@ -3,12 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="13054186-bdda-48d8-ae9d-88967008b796" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/me.html.erb" afterPath="$PROJECT_DIR$/app/views/users/me.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
     </list>
     <ignored path="shopping.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/20130324232434_add_initial_column_to_users.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1364168121607" ignored="false" />
     <file path="/routes.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369543806473" ignored="false" />
-    <file path="/users_controller.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369555701442" ignored="false" />
+    <file path="/users_controller.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369556064688" ignored="false" />
     <file path="/new.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1364286006654" ignored="false" />
     <file path="/products_controller.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1368316779507" ignored="false" />
     <file path="/20130325003342_add_initial_column_to_products.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1364171890525" ignored="false" />
@@ -51,7 +52,7 @@
     <file path="/Gemfile" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369542313902" ignored="false" />
     <file path="/development.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369542930230" ignored="false" />
     <file path="/facebook_success.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369131899864" ignored="false" />
-    <file path="/me.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369555807355" ignored="false" />
+    <file path="/me.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369556025838" ignored="false" />
     <file path="/rest-graph.yaml" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369554363093" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,28 +70,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="7" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
+            <state line="6" column="16" selection-start="176" selection-end="176" vertical-scroll-proportion="0.1212938">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facebook_success.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/facebook_success.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="5" selection-start="0" selection-end="379" vertical-scroll-proportion="-7.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="me.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="me.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/me.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="24" selection-start="265" selection-end="265" vertical-scroll-proportion="0.14363885">
+            <state line="7" column="9" selection-start="250" selection-end="250" vertical-scroll-proportion="-4.375">
               <folding />
             </state>
           </provider>
@@ -128,8 +120,8 @@
         <option value="$PROJECT_DIR$/app/views/users/facebook.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/config/rest-graph.yaml" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/me.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       </list>
     </option>
   </component>
@@ -750,21 +742,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/facebook_success.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="5" selection-start="0" selection-end="379" vertical-scroll-proportion="-7.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="7" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
+        <state line="12" column="5" selection-start="0" selection-end="379" vertical-scroll-proportion="0.24623802">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/me.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="24" selection-start="265" selection-end="265" vertical-scroll-proportion="0.14363885">
+        <state line="7" column="9" selection-start="250" selection-end="250" vertical-scroll-proportion="-4.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="16" selection-start="176" selection-end="176" vertical-scroll-proportion="0.1212938">
           <folding />
         </state>
       </provider>
