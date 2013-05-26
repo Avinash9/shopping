@@ -6,9 +6,6 @@
     Looping through your profile:<br />
     <ul>
       <%= @me.data.id %>
-      <% @graph_data.each do |status| %>
-          <%= status["message"] %> (<i><%= status["updated_time"]%></i>)<hr>
-      <% end %>
     </ul>
 
   </table>
