@@ -1,15 +1,19 @@
 class UsersController < ApplicationController
-
   include RestGraph::RailsUtil
   before_filter :filter_setup_rest_graph
 
-  private
-  def filter_setup_rest_graph
-    rest_graph_setup(:auto_authorize => true)
+  def me
+    render :text => rest_graph.get('me', :metadata => 1).inspect
   end
 
-  def me
-    render :text => rest_graph.get('me').inspect
+
+
+  def feed
+    render :text => rest_graph.get('me/home').inspect
+  end
+
+  def wall
+    render :text => rest_graph.get('me/feed').inspect
   end
 
   def facebook
@@ -172,6 +176,14 @@ class UsersController < ApplicationController
     session[:user] = nil
     flash[:message] = 'Logged out'
     redirect_to root_path
+  end
+
+
+  private
+  def filter_setup_rest_graph
+    scope = []
+    scope << 'read_stream'
+    rest_graph_setup(:auto_authorize => true, :auto_authorize_scope => scope.join(','))
   end
   #End of Class
 end
