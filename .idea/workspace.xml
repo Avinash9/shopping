@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13054186-bdda-48d8-ae9d-88967008b796" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/me.html.erb" afterPath="$PROJECT_DIR$/app/views/users/me.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/rest-graph.yaml" afterPath="$PROJECT_DIR$/config/rest-graph.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shopping.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/20130324232434_add_initial_column_to_users.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1364168121607" ignored="false" />
     <file path="/routes.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369543806473" ignored="false" />
-    <file path="/users_controller.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369553308061" ignored="false" />
+    <file path="/users_controller.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369554561900" ignored="false" />
     <file path="/new.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1364286006654" ignored="false" />
     <file path="/products_controller.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1368316779507" ignored="false" />
     <file path="/20130325003342_add_initial_column_to_products.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1364171890525" ignored="false" />
@@ -75,7 +72,7 @@
       <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="43" selection-start="230" selection-end="230" vertical-scroll-proportion="0.1819407">
+            <state line="183" column="20" selection-start="5390" selection-end="5390" vertical-scroll-proportion="0.7978437">
               <folding />
             </state>
           </provider>
@@ -779,7 +776,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="43" selection-start="230" selection-end="230" vertical-scroll-proportion="0.1819407">
+        <state line="183" column="20" selection-start="5390" selection-end="5390" vertical-scroll-proportion="0.7978437">
           <folding />
         </state>
       </provider>

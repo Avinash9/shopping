@@ -181,6 +181,7 @@ class UsersController < ApplicationController
   def filter_setup_rest_graph
     scope = []
     scope << 'read_stream'
+    scope << 'email'
     rest_graph_setup(:auto_authorize => true, :auto_authorize_scope => scope.join(','))
   end
   #End of Class
