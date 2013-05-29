@@ -1,20 +1,29 @@
 <td width="60%" valign="top">
     <table border="0" cellpadding="3" cellspacing="3" width="100%">
         <tr>
-            <td colspan="2" align="left"><span style="color:red; font-family:verdana; font-size:40px">&nbsp;</span></td>
+            <td colspan="4" align="left"><span style="color:red; font-family:verdana; font-size:40px">&nbsp;</span></td>
         </tr>
         <tr>
-            <td align="center">
-                <form id="search_form" name="search_form">
+            <td align="center" colspan="4">
+                <form id="search_form" name="search_form" action="/search/index" method="post" >
                     <label><span style="color:red; font-family:verdana; font-size:20px">Enter the product you want to search : </span></label>
                     <input type="text" name="search" id="search" size="30" />
+                    <input type="submit" value="Search" />
                 </form>
             </td>
         </tr>
-        <tr>
-            <td align="center">
-                <span style="color:blue; font-family:verdana; font-size:40px">Under Construction</span>
-            </td>
-        </tr>
+        <tr><td colspan="4" align="center" style="font-size: 40px">&nbsp;</td></tr>
+        <% if @products.nil? %>
+          <tr><td align="center" style="font-size: 40px" colspan="4">No products matched the searched</td></tr>
+        <% else %>
+          <% @products.in_groups_of(2, false) do |products| %>
+            <tr>
+              <% products.each do |product| %>
+                <td align="center"><%= link_to image_tag(product.image_url, :border => "2", :alt => product.image_url, :size => "50x70"), :controller => "products", :action => "detail", :p_id => product.id %></td>
+                <td><%= "Name = " + product.name %></td>
+              <% end %>
+            </tr>
+          <% end %>
+      <% end %>
     </table>
 </td>

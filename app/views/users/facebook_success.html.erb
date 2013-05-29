@@ -16,7 +16,7 @@
           <td colspan="3" align="center"><b>Friends Data  - Output from "graph.facebook.com/me/friends"</b></td>
         </tr>
         <tr>
-          <td colspan="3"><%# @me_data.inspect %></td>
+          <td colspan="3"><%= @me_data.inspect %></td>
         </tr>
         <tr>
             <th>Profile Picture</th>
@@ -32,7 +32,7 @@
                 <img src=<%= fbapi_prefix + user_id + fbapi_postfix_pictures %> />
             </td>
             <td align="center">
-                <%= d['name'] %>
+                <%= link_to d['name'], :controller => "users", :action => "facebook_friend", :id => d['id'] %>
             </td>
             <td align="center">
                 <% fbapi_prefix = 'https://graph.facebook.com/me/friends?access_token=' %>

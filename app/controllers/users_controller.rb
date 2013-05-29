@@ -6,38 +6,36 @@ class UsersController < ApplicationController
 
   end
 
-=begin
-  def facebook_login
-    if session[:access_token] = params[:code]
-      redirect_to :controller => 'users', :action => 'facebook_success'
-    else
-      redirect_to :controller => 'users', :action => 'facebook_error'
-    end
-  end
-=end
-
   def facebook_success
     #render :json => rest_graph.get('me').inspect
-    @me = ActiveSupport::JSON.decode(rest_graph.get('me').to_json)
+    #render :json => rest_graph.get('me/home')['data'].first
+    #render :json => rest_graph.get('me/feed').inspect
     #render :json => rest_graph.get('me/friends').inspect
-    @me_data = ActiveSupport::JSON.decode(rest_graph.get('me/friends').to_json)
+    #@me = ActiveSupport::JSON.decode(rest_graph.get('me').to_json)
+    #@me_friends = ActiveSupport::JSON.decode(rest_graph.get('me/friends').to_json)
+    @me = rest_graph.get('me').as_json
+    @me_data = rest_graph.get('me/friends').as_json
     session[:access_token] = params[:code]
-    #@api = Koala::Facebook::API.new(session[:access_token])
-    #@graph_data = @api.get_object("/me/statuses", "fields"=>"message")
+  end
+
+  def facebook_success_koala
+    session[:access_token] = Koala::Facebook::OAuth.new(oauth_redirect_url).get_access_token(params[:code]) if params[:code]
+    redirect_to session[:access_token] ? facebook_koala : facebook_error
+  end
+
+  def facebook_koala
+    @access_token = facebook_cookies['access_token']
+    @graph = Koala::Facebook::GraphAPI.new(@access_token)
   end
 
   def facebook_error
 
   end
 
-  def feed
-    #render :json => rest_graph.get('me/home')['data'].first
+  def facebook_friend
+    @friend_id = params[:id]
+    @friend_info = rest_graph.get(@friend_id).as_json
   end
-
-  def wall
-    #render :json => rest_graph.get('me/feed').inspect
-  end
-
 
   def index
     @user = nil

@@ -2,19 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13054186-bdda-48d8-ae9d-88967008b796" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/users/feed.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/users/me.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/users/wall.html.erb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/facebook.html.erb" afterPath="$PROJECT_DIR$/app/views/users/facebook.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/facebook.yml" afterPath="$PROJECT_DIR$/config/facebook.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/facebook_success.html.erb" afterPath="$PROJECT_DIR$/app/views/users/facebook_success.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/search/index.html.erb" afterPath="$PROJECT_DIR$/app/views/search/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/koala.rb" afterPath="$PROJECT_DIR$/config/initializers/koala.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/search_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/search_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shopping.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/20130324232434_add_initial_column_to_users.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1364168121607" ignored="false" />
-    <file path="/routes.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369543806473" ignored="false" />
-    <file path="/users_controller.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369566733192" ignored="false" />
+    <file path="/routes.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369641206392" ignored="false" />
+    <file path="/users_controller.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369646566177" ignored="false" />
     <file path="/new.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1364286006654" ignored="false" />
     <file path="/products_controller.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1368316779507" ignored="false" />
     <file path="/20130325003342_add_initial_column_to_products.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1364171890525" ignored="false" />
@@ -26,7 +31,7 @@
     <file path="/product.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1366420282869" ignored="false" />
     <file path="/admin_controller.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1367058233735" ignored="false" />
     <file path="$PROJECT_DIR$/../usertweet/app/models/user.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1364285292257" ignored="false" />
-    <file path="/index.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1368878699110" ignored="false" />
+    <file path="/index.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369821311991" ignored="false" />
     <file path="/add.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1368309507362" ignored="false" />
     <file path="/modify.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1367059627047" ignored="false" />
     <file path="/modify_delete.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1364589127299" ignored="false" />
@@ -45,22 +50,24 @@
     <file path="/payment_confirm.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1368877436864" ignored="false" />
     <file path="/20130420010628_add_initial_column_to_order_items.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1366420417537" ignored="false" />
     <file path="/order_item.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1366420189059" ignored="false" />
-    <file path="/search_controller.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1367060156635" ignored="false" />
+    <file path="/search_controller.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369820759256" ignored="false" />
     <file path="/application.js" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1366789159618" ignored="false" />
     <file path="/20130427090043_add_email_and_salt_column_to_users.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1367053275372" ignored="false" />
     <file path="/contactus_controller.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1367523705318" ignored="false" />
-    <file path="/Dummy.txt" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369566825431" ignored="false" />
+    <file path="/Dummy.txt" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369819910659" ignored="false" />
     <file path="/facebook.html" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369099379407" ignored="false" />
     <file path="/facebook_error.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369130702275" ignored="false" />
     <file path="/facebook_login.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369130770013" ignored="false" />
-    <file path="/facebook.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369565062531" ignored="false" />
+    <file path="/facebook.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369646450228" ignored="false" />
     <file path="/Gemfile" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369542313902" ignored="false" />
-    <file path="/development.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369542930230" ignored="false" />
-    <file path="/facebook_success.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369566867850" ignored="false" />
+    <file path="/development.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369645877940" ignored="false" />
+    <file path="/facebook_success.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369641115440" ignored="false" />
     <file path="/me.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369563116452" ignored="false" />
     <file path="/rest-graph.yaml" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369554363093" ignored="false" />
     <file path="/production.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369556249659" ignored="false" />
     <file path="/test.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369556256315" ignored="false" />
+    <file path="/facebook_friend.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369644942081" ignored="false" />
+    <file path="/facebook.yml" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369645721290" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,16 +87,16 @@
       <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="4" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0">
+            <state line="27" column="57" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facebook_success.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/users/facebook_success.html.erb">
+      <file leaf-file-name="facebook.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/users/facebook.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="36" selection-start="1687" selection-end="1687" vertical-scroll-proportion="0.75376195">
+            <state line="17" column="32" selection-start="436" selection-end="436" vertical-scroll-proportion="0.3551532">
               <folding />
             </state>
           </provider>
@@ -113,22 +120,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/environment.rb" />
-        <option value="$PROJECT_DIR$/app/views/users/facebook_error.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/facebook_login.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/config/initializers/koala.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/config/facebook.yml" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/config/rest-graph.yaml" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/environments/test.rb" />
-        <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/app/views/users/me.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/facebook_success.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/facebook_friend.html.erb" />
+        <option value="$PROJECT_DIR$/config/facebook.yml" />
+        <option value="$PROJECT_DIR$/config/initializers/koala.rb" />
+        <option value="$PROJECT_DIR$/config/environments/development.rb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/facebook.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/users/facebook_success.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/search/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/search_controller.rb" />
       </list>
     </option>
   </component>
@@ -172,6 +179,82 @@
               <option name="myItemId" value="shopping" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest-graph (v2.0.3, ruby-1.8.7-p358) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest-graph (v2.0.3, ruby-1.8.7-p358) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest-graph (v2.0.3, ruby-1.8.7-p358) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest-graph" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest-graph (v2.0.3, ruby-1.8.7-p358) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -194,6 +277,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="initializers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -252,6 +353,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="products" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -357,14 +502,14 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="TODO_SCOPE" value="Project Files" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="recentsLimit" value="5" />
+    <property name="TODO_SCOPE" value="Project Files" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Rails.Development: shopping">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -677,7 +822,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28486648" sideWeight="0.85057473" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24183977" sideWeight="0.85057473" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -748,87 +893,105 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/initializers/koala.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="4" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0">
+        <state line="22" column="31" selection-start="787" selection-end="787" vertical-scroll-proportion="0.45081967">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/facebook_success.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="73" selection-start="1442" selection-end="1649" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="19" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.5960265">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/rest-graph.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="29" selection-start="119" selection-end="119" vertical-scroll-proportion="0.059602648" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/users.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="23" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.7152318" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="3" selection-start="2580" selection-end="2580" vertical-scroll-proportion="0.821192" />
+        <state line="68" column="58" selection-start="2580" selection-end="2580" vertical-scroll-proportion="0.85655737" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/test.rb">
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="3" selection-start="1623" selection-end="1623" vertical-scroll-proportion="0.77483445" />
+        <state line="38" column="59" selection-start="1374" selection-end="1470" vertical-scroll-proportion="0.7549669" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/rest-graph.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="113" selection-start="4312" selection-end="4381" vertical-scroll-proportion="0.49860725" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/facebook_login.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/facebook_error.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/facebook.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="102" selection-start="539" selection-end="539" vertical-scroll-proportion="0.37604457" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="4" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="8" column="49" selection-start="0" selection-end="260" vertical-scroll-proportion="0.1589404" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/facebook_success.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="36" selection-start="1687" selection-end="1687" vertical-scroll-proportion="0.75376195">
+        <state line="10" column="71" selection-start="505" selection-end="505" vertical-scroll-proportion="0.20519836" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/facebook.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="47" selection-start="174" selection-end="206" vertical-scroll-proportion="0.119205296" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="330" selection-end="330" vertical-scroll-proportion="0.20215634" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/facebook_friend.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="16" selection-start="46" selection-end="46" vertical-scroll-proportion="0.020519836" />
+      </provider>
+    </entry>
+    <entry file="file:///Library/Ruby/Gems/1.8/gems/koala-1.7.0rc1/lib/koala/oauth.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="10" selection-start="4011" selection-end="4011" vertical-scroll-proportion="0.3328841">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="57" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/products/modify.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="29" selection-start="1625" selection-end="1625" vertical-scroll-proportion="0.88235295">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/products_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="60" selection-start="1458" selection-end="1458" vertical-scroll-proportion="0.54317546">
+          <folding>
+            <element signature="n#style#0;n#span#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#label#0;n#form#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/search_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="58" selection-start="243" selection-end="243" vertical-scroll-proportion="0.13907285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/products/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="31" selection-start="935" selection-end="935" vertical-scroll-proportion="0.38987687">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/facebook.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="32" selection-start="436" selection-end="436" vertical-scroll-proportion="0.3551532">
           <folding />
         </state>
       </provider>
