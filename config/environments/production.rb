@@ -67,6 +67,6 @@ Shopping::Application.configure do
 
   ENV['FB_APP_ID'] = '338774666212397'
   ENV['FB_SECRET_KEY'] = '24b36c29367634e0149b45cc7061a0fe'
-  ENV['SITE_URL'] = 'jigar-shopping.herokuapp.com'
+  ENV['SITE_URL'] = 'http://jigar-shopping.herokuapp.com'
 
 end
