@@ -119,7 +119,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
   json
-  koala
+  koala (~> 1.7.0rc1)
   pg
   rails (= 3.2.12)
   rest-client (>= 1.6)

@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
+gem "koala", "~> 1.7.0rc1"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -17,8 +18,6 @@ gem 'rest-graph'
 # these gems are used in rest-graph
 gem 'rest-client', '>=1.6'
 gem 'json'
-
-gem 'koala'
 
 # Gems used only for assets and not required
 # in production environments by default.

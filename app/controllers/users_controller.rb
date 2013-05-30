@@ -1,41 +1,45 @@
 class UsersController < ApplicationController
-  include RestGraph::RailsUtil
-  before_filter :filter_setup_rest_graph
+  require "koala"
 
-  def facebook
-
+  def fb_connect
+    session[:jigar] = Koala::Facebook::OAuth.new(APP_ID, APP_SECRET, SITE_URL + '/users/fb_success')
+    @auth_url =  session[:jigar].url_for_oauth_code(:permissions=>"email,friends_email,
+                                                                  user_birthday, friends_birthday,
+                                                                  read_friendlists, read_mailbox,
+                                                                  user_about_me, friends_about_me,
+                                                                  user_location, friends_location,
+                                                                  user_photos,friends_photos,
+                                                                  ")
+    #puts @auth_url
   end
 
+  def fb_success
+    #if the session[:access_token] is expired
+      #session[:access_token] = session[:jigar].get_access_token(params[:code])
+    @api = Koala::Facebook::API.new(session[:access_token])
+    @me = @api.get_object("/me")
+    #@me_albums = @api.get_object("/me/albums")
+    @me_friends = @api.get_object("/me/friends?fields=id,name,birthday,username,email")
+    #render :xml => @me_albums
+  end
+
+  def fb_invite
+    # Send an e-mail invitation to that friend
+    flash[:message] = params[:username] + " invited to join AB"
+    redirect_to :controller => 'users', :action => 'fb_success'
+  end
+
+  def facebook_friend_detail
+    @api = Koala::Facebook::API.new(session[:access_token])
+
+  end
+=begin
   def facebook_success
-    #render :json => rest_graph.get('me').inspect
+    #@graph_status = @api.get_object("/me/statuses", "fields"=>"message")
     #render :json => rest_graph.get('me/home')['data'].first
     #render :json => rest_graph.get('me/feed').inspect
-    #render :json => rest_graph.get('me/friends').inspect
-    #@me = ActiveSupport::JSON.decode(rest_graph.get('me').to_json)
-    #@me_friends = ActiveSupport::JSON.decode(rest_graph.get('me/friends').to_json)
-    @me = rest_graph.get('me').as_json
-    @me_data = rest_graph.get('me/friends').as_json
-    session[:access_token] = params[:code]
   end
-
-  def facebook_success_koala
-    session[:access_token] = Koala::Facebook::OAuth.new(oauth_redirect_url).get_access_token(params[:code]) if params[:code]
-    redirect_to session[:access_token] ? facebook_koala : facebook_error
-  end
-
-  def facebook_koala
-    @access_token = facebook_cookies['access_token']
-    @graph = Koala::Facebook::GraphAPI.new(@access_token)
-  end
-
-  def facebook_error
-
-  end
-
-  def facebook_friend
-    @friend_id = params[:id]
-    @friend_info = rest_graph.get(@friend_id).as_json
-  end
+=end
 
   def index
     @user = nil
@@ -178,6 +182,7 @@ class UsersController < ApplicationController
   end
 
   private
+=begin
   def filter_setup_rest_graph
     scope = []
     # Default User Info + below mentioned permissions will be requested
@@ -190,5 +195,6 @@ class UsersController < ApplicationController
     scope << 'read_stream' #re-arrange this later on
     rest_graph_setup(:auto_authorize => true, :auto_authorize_scope => scope.join(','))
   end
+=end
   #End of Class
 end

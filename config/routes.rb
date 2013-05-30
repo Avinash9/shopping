@@ -22,11 +22,9 @@ Shopping::Application.routes.draw do
   match 'users/checkout' => 'users#checkout'
   match 'users/checkout_confirm' => 'users#checkout_confirm'
   match 'users/payment_confirm' => 'users#payment_confirm'
-  match 'users/facebook' => 'users#facebook'
-  match 'users/facebook_login' => 'users#facebook_login'
-  match 'users/facebook_success' => 'users#facebook_success'
-  match 'users/facebook_error' => 'users#facebook_error'
-  match 'users/facebook_friend' => 'users#facebook_friend'
+  match 'users/fb_connect' => 'users#fb_connect'
+  match 'users/fb_success' => 'users#fb_success'
+  match 'users/fb_invite' => 'users#fb_invite'
 
   #Products
   match 'products' => 'products#index'

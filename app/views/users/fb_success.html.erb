@@ -1,0 +1,67 @@
+<td width="60%" valign="top">
+  <table border="0" width="100%">
+    <tr>
+      <td align="center" style="font-size: 30px">
+        <b>Welcome <%= @me['name'] %></b>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src=<%= "http://graph.facebook.com/" + @me['id'].to_s + "/picture?type=large" %> />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3">&nbsp;<%#= @me_albums.inspect %></td>
+    </tr>
+    <!--<tr><td>FB ID = <%#= @me['id'] %></td></tr>
+    <tr><td>Gender = <%#= @me['gender'] %></td></tr>
+    <tr><td>Name = <%#= @me['name'] %></td></tr>
+    <tr><td>Birthday = <%#= @me['birthday'] %></td></tr>
+    <tr><td>FB Username = <%#= @me['username'] %></td></tr>
+    <tr><td>Email = <%#= @me['email'] %></td></tr>
+    <tr><td>&nbsp;</td></tr>-->
+  </table>
+
+  <table border="0" width="100%">
+    <tr>
+      <td colspan="4" align="center"><b>Please invite your friends from below</b></td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <% if flash[:message] %>
+            <%= flash[:message] %>
+        <% end %>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4"><%#= @me_friends.inspect %></td>
+    </tr>
+    <% @me_friends.in_groups_of(4, false) do |me_friends| %>
+        <tr>
+          <% for friend in me_friends %>
+            <td align="center">
+              <hr />
+              <%= image_tag("http://graph.facebook.com/" + friend['id'].to_s + "/picture?type=square") %>
+              <br />
+              <%= link_to "Invite" , :controller => "users", :action => "fb_invite", :id => friend['id'], :username => friend['username'] %>
+              <br />
+              <%= friend['name'] %>
+              <br />
+              <% if friend['birthday'] %>
+                  <%= friend['birthday'] %>
+              <% else %>
+                  &nbsp;
+              <% end %>
+
+            </td>
+          <% end %>
+        </tr>
+    <% end %>
+  </table>
+</td>
+
+<!--
+  <%# @graph_status.each do |status| %>
+      <%#= status["message"] %> (<i><%#=status["updated_time"]%></i>)<hr>
+  <%# end %>
+    -->
