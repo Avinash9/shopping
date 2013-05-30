@@ -2,25 +2,28 @@ class UsersController < ApplicationController
   require "koala"
 
   def fb_connect
-    session[:jigar] = Koala::Facebook::OAuth.new(APP_ID, APP_SECRET, SITE_URL + '/users/fb_success')
-    @auth_url =  session[:jigar].url_for_oauth_code(:permissions=>"email,friends_email,
+    session[:jigar] = Koala::Facebook::OAuth.new(ENV['FB_APP_ID'], ENV['FB_SECRET_KEY'], ENV['SITE_URL'] + '/users/fb_success')
+    @auth_url =  session[:jigar].url_for_oauth_code(:permissions=>"email,
                                                                   user_birthday, friends_birthday,
                                                                   read_friendlists, read_mailbox,
                                                                   user_about_me, friends_about_me,
                                                                   user_location, friends_location,
-                                                                  user_photos,friends_photos,
-                                                                  ")
-    #puts @auth_url
+                                                                  user_photos,friends_photos")
   end
 
   def fb_success
-    #if the session[:access_token] is expired
-      #session[:access_token] = session[:jigar].get_access_token(params[:code])
+    if session[:access_token].nil?
+      session[:access_token] = session[:jigar].get_access_token(params[:code])
+    else
+      session[:access_token] = session[:jigar].get_access_token(params[:code])
+    end
+    #session[:access_token] = session[:jigar].exchange_access_token_info(session[:access_token])
+
     @api = Koala::Facebook::API.new(session[:access_token])
     @me = @api.get_object("/me")
     #@me_albums = @api.get_object("/me/albums")
     @me_friends = @api.get_object("/me/friends?fields=id,name,birthday,username,email")
-    #render :xml => @me_albums
+    #render :xml => session
   end
 
   def fb_invite

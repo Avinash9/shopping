@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13054186-bdda-48d8-ae9d-88967008b796" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/users/facebook_error.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/users/facebook_friend.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/users/facebook_login.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/users/facebook_success.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/initializers/koala.rb" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/users/facebook.html.erb" afterPath="$PROJECT_DIR$/app/views/users/fb_connect.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/constants.rb" afterPath="$PROJECT_DIR$/config/initializers/constants.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -20,7 +12,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/20130324232434_add_initial_column_to_users.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1364168121607" ignored="false" />
     <file path="/routes.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369901896599" ignored="false" />
-    <file path="/users_controller.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369903353630" ignored="false" />
+    <file path="/users_controller.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369905428578" ignored="false" />
     <file path="/new.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1364286006654" ignored="false" />
     <file path="/products_controller.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1368316779507" ignored="false" />
     <file path="/20130325003342_add_initial_column_to_products.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1364171890525" ignored="false" />
@@ -55,17 +47,17 @@
     <file path="/application.js" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1366789159618" ignored="false" />
     <file path="/20130427090043_add_email_and_salt_column_to_users.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1367053275372" ignored="false" />
     <file path="/contactus_controller.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1367523705318" ignored="false" />
-    <file path="/Dummy.txt" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369902158942" ignored="false" />
+    <file path="/Dummy.txt" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369905979604" ignored="false" />
     <file path="/facebook.html" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369099379407" ignored="false" />
     <file path="/facebook_error.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369130702275" ignored="false" />
     <file path="/facebook_login.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369130770013" ignored="false" />
     <file path="/facebook.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369871430658" ignored="false" />
     <file path="/Gemfile" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369542313902" ignored="false" />
-    <file path="/development.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369872428757" ignored="false" />
+    <file path="/development.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369905757434" ignored="false" />
     <file path="/facebook_success.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369885240061" ignored="false" />
     <file path="/me.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369563116452" ignored="false" />
     <file path="/rest-graph.yaml" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369554363093" ignored="false" />
-    <file path="/production.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369872443812" ignored="false" />
+    <file path="/production.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369905802897" ignored="false" />
     <file path="/test.rb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369556256315" ignored="false" />
     <file path="/facebook_friend.html.erb" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369644942081" ignored="false" />
     <file path="/facebook.yml" changelist="13054186-bdda-48d8-ae9d-88967008b796" time="1369645721290" ignored="false" />
@@ -90,16 +82,16 @@
       <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="44" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.5562914">
+            <state line="17" column="78" selection-start="999" selection-end="999" vertical-scroll-proportion="0.3178808">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fb_success.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/fb_success.html.erb">
+      <file leaf-file-name="constants.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/constants.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="1633" selection-end="1633" vertical-scroll-proportion="-24.375">
+            <state line="3" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -130,14 +122,14 @@
         <option value="$PROJECT_DIR$/app/views/search/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/search_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/facebook.html.erb" />
-        <option value="$PROJECT_DIR$/config/environments/development.rb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
-        <option value="$PROJECT_DIR$/config/initializers/constants.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/users/facebook_success.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/facebook_callback.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/users/fb_success.html.erb" />
+        <option value="$PROJECT_DIR$/config/environments/development.rb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/config/initializers/constants.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       </list>
     </option>
@@ -280,6 +272,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="initializers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="environments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -705,7 +733,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24851632" sideWeight="0.85057473" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25593472" sideWeight="0.85057473" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -776,33 +804,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/users/fb_success.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="8" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="3" selection-start="2526" selection-end="2526" vertical-scroll-proportion="0.8543046" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="19" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.7152318" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="59" selection-start="1439" selection-end="1471" vertical-scroll-proportion="0.7549669" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/fb_connect.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="32" selection-start="254" selection-end="254" vertical-scroll-proportion="0.2506964" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.ru">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -827,18 +828,6 @@
         <state line="24" column="68" selection-start="604" selection-end="607" vertical-scroll-proportion="0.33333334" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/constants.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="45" selection-start="39" selection-end="71" vertical-scroll-proportion="0.01986755">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Ruby/Gems/1.8/gems/koala-1.7.0rc1/lib/koala/oauth.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="46" selection-start="4506" selection-end="4506" vertical-scroll-proportion="0.020215634" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="26" selection-start="107" selection-end="107" vertical-scroll-proportion="0.09933775">
@@ -858,16 +847,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Library/Ruby/Gems/1.8/gems/koala-1.7.0rc1/lib/koala/oauth.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="203" column="36" selection-start="9415" selection-end="9441" vertical-scroll-proportion="0.7169811" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/fb_success.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1633" selection-end="1633" vertical-scroll-proportion="-24.375">
+        <state line="48" column="0" selection-start="1633" selection-end="1633" vertical-scroll-proportion="0.49860725" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="2" selection-start="1515" selection-end="1515" vertical-scroll-proportion="0.794702" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="2" selection-start="2485" selection-end="2633" vertical-scroll-proportion="0.8807947" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/facebook.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/rest-graph.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="19" selection-start="230" selection-end="230" vertical-scroll-proportion="0.1589404" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/constants.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="44" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.5562914">
+        <state line="17" column="78" selection-start="999" selection-end="999" vertical-scroll-proportion="0.3178808">
           <folding />
         </state>
       </provider>

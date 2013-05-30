@@ -35,7 +35,8 @@ Shopping::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 
-  #ENV['FB_APP_ID'] = '139465562909485'
-  #ENV['FB_SECRET_KEY'] = 'ec3aed00a6c8d6ccfc809d8e5307f4f0'
+  ENV['FB_APP_ID'] = '139465562909485'
+  ENV['FB_SECRET_KEY'] = 'ec3aed00a6c8d6ccfc809d8e5307f4f0'
+  ENV['SITE_URL'] = 'http://localhost:3000'
 
 end
