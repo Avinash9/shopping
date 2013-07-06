@@ -1,48 +1,4 @@
 class UsersController < ApplicationController
-  require "koala"
-
-  def fb_connect
-    session[:jigar] = Koala::Facebook::OAuth.new(ENV['FB_APP_ID'], ENV['FB_SECRET_KEY'], ENV['SITE_URL'] + '/users/fb_success')
-    @auth_url =  session[:jigar].url_for_oauth_code(:permissions=>"email,
-                                                                  user_birthday, friends_birthday,
-                                                                  read_friendlists, read_mailbox,
-                                                                  user_about_me, friends_about_me,
-                                                                  user_location, friends_location,
-                                                                  user_photos,friends_photos")
-  end
-
-  def fb_success
-    if session[:access_token].nil?
-      session[:access_token] = session[:jigar].get_access_token(params[:code])
-    else
-      session[:access_token] = session[:jigar].get_access_token(params[:code])
-    end
-    #session[:access_token] = session[:jigar].exchange_access_token_info(session[:access_token])
-
-    @api = Koala::Facebook::API.new(session[:access_token])
-    @me = @api.get_object("/me")
-    #@me_albums = @api.get_object("/me/albums")
-    @me_friends = @api.get_object("/me/friends?fields=id,name,birthday,username,email")
-    #render :xml => session
-  end
-
-  def fb_invite
-    # Send an e-mail invitation to that friend
-    flash[:message] = params[:username] + " invited to join AB"
-    redirect_to :controller => 'users', :action => 'fb_success'
-  end
-
-  def facebook_friend_detail
-    @api = Koala::Facebook::API.new(session[:access_token])
-
-  end
-=begin
-  def facebook_success
-    #@graph_status = @api.get_object("/me/statuses", "fields"=>"message")
-    #render :json => rest_graph.get('me/home')['data'].first
-    #render :json => rest_graph.get('me/feed').inspect
-  end
-=end
 
   def index
     @user = nil
@@ -183,21 +139,5 @@ class UsersController < ApplicationController
     flash[:message] = 'Logged out'
     redirect_to root_path
   end
-
-  private
-=begin
-  def filter_setup_rest_graph
-    scope = []
-    # Default User Info + below mentioned permissions will be requested
-    scope << 'email'
-    scope << 'user_birthday'
-    scope << 'friends_birthday'
-    scope << 'user_location'
-    scope << 'friends_location'
-    scope << 'friends_photos'
-    scope << 'read_stream' #re-arrange this later on
-    rest_graph_setup(:auto_authorize => true, :auto_authorize_scope => scope.join(','))
-  end
-=end
   #End of Class
 end

@@ -1,8 +1,0 @@
-development:
-  app_id: '139465562909485'
-  secret_key: 'ec3aed00a6c8d6ccfc809d8e5307f4f0'
-  callback_host: 'localhost'
-production:
-  app_id: '338774666212397'
-  secret_key: '24b36c29367634e0149b45cc7061a0fe'
-  callback_host: 'jigar-shopping.herokuapp.com'
